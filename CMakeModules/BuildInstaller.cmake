@@ -15,7 +15,7 @@ set(ARCHIVE "${PLATFORM}.7z")
 
 file(MAKE_DIRECTORY ${BUILD_DIR})
 file(MAKE_DIRECTORY ${DIST_DIR})
-file(DOWNLOAD https://github.com/citra-emu/ext-windows-bin/raw/master/qtifw/${ARCHIVE}
+file(DOWNLOAD https://github.com/Evilmass/ext-win-bin/raw/main/qtifw/${ARCHIVE}
     "${BUILD_DIR}/${ARCHIVE}" SHOW_PROGRESS)
 execute_process(COMMAND ${CMAKE_COMMAND} -E tar xf "${BUILD_DIR}/${ARCHIVE}"
     WORKING_DIRECTORY "${BUILD_DIR}/")
